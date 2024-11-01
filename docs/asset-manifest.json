@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Router-dating/static/css/main.a90d668c.css",
-    "main.js": "/Router-dating/static/js/main.2d6a05f6.js",
+    "main.js": "/Router-dating/static/js/main.73b23732.js",
     "index.html": "/Router-dating/index.html",
     "main.a90d668c.css.map": "/Router-dating/static/css/main.a90d668c.css.map",
-    "main.2d6a05f6.js.map": "/Router-dating/static/js/main.2d6a05f6.js.map"
+    "main.73b23732.js.map": "/Router-dating/static/js/main.73b23732.js.map"
   },
   "entrypoints": [
     "static/css/main.a90d668c.css",
-    "static/js/main.2d6a05f6.js"
+    "static/js/main.73b23732.js"
   ]
 }

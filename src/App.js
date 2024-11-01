@@ -5,16 +5,16 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Articles from "./pages/Articles";
 import Article from "./pages/Article";
-import { Switch } from "react-router-dom/cjs/react-router-dom.min";
-import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
-import { HashRouter as Router } from "react-router-dom/cjs/react-router-dom.min";
+import { Switch } from "react-router-dom";
+import { Redirect } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <main>
-        <Router>
+    <Router>
+      <div>
+        <Header />
+        <main>
           <Switch>
             <Route path="/" exact>
               <Redirect to="/home" />
@@ -35,9 +35,9 @@ function App() {
               <ContactUs />
             </Route>
           </Switch>
-        </Router>
-      </main>
-    </div>
+        </main>
+      </div>
+    </Router>
   );
 }
 
