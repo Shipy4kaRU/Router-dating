@@ -7,34 +7,35 @@ import Articles from "./pages/Articles";
 import Article from "./pages/Article";
 import { Switch } from "react-router-dom/cjs/react-router-dom.min";
 import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
-import { BrowserRouter as Router } from "react-router-dom/cjs/react-router-dom.min";
+import { HashRouter as Router } from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
   return (
     <div>
-      <Router basename="/Router-dating"></Router>
       <Header />
       <main>
-        <Switch>
-          <Route path="/" exact>
-            <Redirect to="/home" />
-          </Route>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/articles" exact>
-            <Articles />
-          </Route>
-          <Route path="/articles/:articleId">
-            <Article />
-          </Route>
-          <Route path="/contact-us">
-            <ContactUs />
-          </Route>
-        </Switch>
+        <Router>
+          <Switch>
+            <Route path="/" exact>
+              <Redirect to="/home" />
+            </Route>
+            <Route path="/home">
+              <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/articles" exact>
+              <Articles />
+            </Route>
+            <Route path="/articles/:articleId">
+              <Article />
+            </Route>
+            <Route path="/contact-us">
+              <ContactUs />
+            </Route>
+          </Switch>
+        </Router>
       </main>
     </div>
   );
